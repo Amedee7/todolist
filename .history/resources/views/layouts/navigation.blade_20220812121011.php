@@ -25,11 +25,11 @@
                 </div>
 
                 <!-- Lien pour la liste des tâches -->
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('tasks.index')" :active="request()->routeIs('tasks.index')">
-                        {{ __('Tasks list') }}
-                    </x-nav-link>
-                </div>
+    <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+        <x-nav-link :href="route('tasks.index')" :active="request()->routeIs('tasks.index')">
+            {{ __('Tasks list') }}
+        </x-nav-link>
+    </div>
             </div>
 
             <!-- Settings Dropdown -->

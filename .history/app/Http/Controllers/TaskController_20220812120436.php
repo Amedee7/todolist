@@ -14,9 +14,7 @@ class TaskController extends Controller
      */
     public function index()
     {
-        $tasks = Task::all();
-
-        return view('tasks.index', compact('tasks'));
+        //
     }
 
     /**
@@ -98,8 +96,8 @@ class TaskController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Task $task)
+    public function destroy($id)
     {
-        $task->delete();
+        //
     }
 }

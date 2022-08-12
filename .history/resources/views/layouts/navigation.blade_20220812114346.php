@@ -16,20 +16,6 @@
                         {{ __('Dashboard') }}
                     </x-nav-link>
                 </div>
-
-                <!-- Lien pour la création d'une tâche -->
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('tasks.create')" :active="request()->routeIs('tasks.create')">
-                        {{ __('Create a task') }}
-                    </x-nav-link>
-                </div>
-
-                <!-- Lien pour la liste des tâches -->
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('tasks.index')" :active="request()->routeIs('tasks.index')">
-                        {{ __('Tasks list') }}
-                    </x-nav-link>
-                </div>
             </div>
 
             <!-- Settings Dropdown -->
@@ -81,6 +67,12 @@
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
         </div>
+        <!-- Lien pour la création d'une tâche -->
+    <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+        <x-nav-link :href="route('tasks.create')" :active="request()->routeIs('tasks.create')">
+            {{ __('Create a task') }}
+        </x-nav-link>
+    </div>
 
         <!-- Responsive Settings Options -->
         <div class="pt-4 pb-1 border-t border-gray-200">
